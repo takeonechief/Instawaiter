@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Welcome</title>
+		<style type='text/css'>
+			#navig {
+				background-color:#fff;
+				height:60px;
+			}
+		
+			#home {
+				background: red url('./main-bin/images/food-6.jpg') 50% 0 repeat fixed;
+				min-height: 600px;
+				background-size:cover;
+				height: 600px;
+				margin: 0 auto;
+				width: 100%;
+				max-width: 1920px;
+				position: relative;
+			}
+			#home article {
+				height: 458px;
+				position: absolute;
+				text-align: center;
+				top: 150px;
+				width: 100%;
+			}
+
+			#about {
+				background: blue url('./main-bin/images/food-5.jpg') 50% 0 no-repeat;
+				min-height: 600px;
+				height: 600px;
+				background-size:cover;
+				margin: 0 auto;
+				width: 100%;
+				max-width: 1920px;
+				position: relative;
+				-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+				box-shadow: 0 0 50px rgba(0,0,0,0.8);
+			}
+
+			#about article {
+				height: 458px;
+				position: absolute;
+				text-align: center;
+				top: 150px;
+				width: 100%;
+			}
+
+			#test {
+				background: blue url('./main-bin/images/urban_sf.jpg') 50% 0 no-repeat fixed;
+				background-size: cover;
+				min-height: 1200px;
+				height: 1200px;
+				margin: 0 auto;
+				width: 100%;
+				max-width: 1920px;
+				position: relative;
+				-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+				box-shadow: 0 0 50px rgba(0,0,0,0.8);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="navig">
+			
+		</div>
+		<section id="home" data-type="background" data-speed="4">
+			<article>
+				I Am Absolute Positioned
+			</article>
+		</section>
+
+		<section id="about" data-type="background" data-speed="10">
+			<article>
+				Simple parallax scroll
+			</article>
+		</section>
+
+		<section id="test" data-type="background" data-speed="12">
+			<article>
+				I Am Absolute Positioned
+			</article>
+		</section>
+
+		<link rel="stylesheet" href="./main-bin/css/foundation/normalize.css" type="text/css">
+		<link rel="stylesheet" href="./main-bin/css/foundation/foundation.css?v=1.01" type="text/css">
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				// Cache the Window object
+				$window = $(window);
+
+				$('section[data-type="background"]').each(function() {
+					var $bgobj = $(this);
+					//var xyz = $('#about').scrollTop();
+					// assigning the object
+					
+					
+
+					$(window).scroll(function() {
+
+						// Scroll the background at var speed
+						// the yPos is a negative value because we're scrolling it UP!
+						var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+						// Put together our final background position
+						var coords = '50% ' + yPos + 'px';
+						
+						//console.log('test'+xyz);
+						
+						// Move the background
+						$bgobj.css({
+							backgroundPosition : coords
+						});
+
+					});
+					// window scroll Ends
+
+				});
+
+			});
+			
+			/*
+			 * Create HTML5 elements for IE's sake
+			 */
+			document.createElement("article");
+			document.createElement("section");
+		</script>
+
+	</body>
+
+	<script></script>
+</html>
