@@ -7,20 +7,78 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>Welcome</title>
-		
+
 	</head>
 
 	<body>
-	
 
 		<link rel="stylesheet" href="./main-bin/css/foundation/normalize.css" type="text/css">
 
+		<script>
+			function plus(a, b) {
+				return (console.log(a + b), console.log(this), console.log(arguments)
+				);
+			}
 
-		
+			plus(2, 2);
+			
+			
+			//invoking function as a method   plus is a method of calc
+			var calc = {
+				status : 'awesome',
+				plus : function(a, b) {
+					return (console.log(a + b), console.log(this), console.log(arguments), console.log(this.status)
+					);
+				}
+			};
+			calc.plus(2, 3);
+			
+			//constructor
+			var Dog = function(){
+				var name, breed;
+				return console.dir(this);
+			};
+			
+			var firstDog = new Dog;
+			firstDog.name = 'junior';
+			firstDog.breed = 'chow chow';
+						
+			
+			//expand via prototype
+			var speak = function(saywhat){
+				console.log(saywhat);
+			};
+			
+			Dog.prototype.speakwow = speak;
+			firstDog.speakwow('bow-wow');
+			
+			console.log(firstDog);
+			console.dir(firstDog);
+			
+			//call and apply
+			var speaker = function(what){
+				console.log(what);
+				console.log(this);
+				var narry = $this;
+				console.log(narry);
+			};
+			
+			var obj_1 = ['jim','joe'];
+			var ocount = obj_1.length;
+			console.log(ocount);
+			
+			var plus = function(){
+				var sum = 0;
+				console.log(arguments.length);
+				for (var i=arguments.length-1; i>=0; --i){
+					sum+= arguments[i];
+				};
+				return sum;
+				
+			};
+			console.log('12='+plus(1,2,83));
+		</script>
 
 	</body>
 
-	<script>
-		
-	</script>
 </html>
