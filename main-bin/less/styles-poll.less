@@ -1,0 +1,476 @@
+/* ------------------------------------------------- */ 
+/*      varialbles                                   */
+/* ------------------------------------------------- */
+@color_primary: #98c83d; //green
+@color_secondary: #fbffd5;
+@user_profile_width: 60px;
+@user_profile_height: 60px;
+/* ------------------------------------------------- */ 
+/*      Mixins                                       */
+/* ------------------------------------------------- */
+.delay-animation (@delay){
+  animation-delay:@delay;
+  -webkit-animation-delay:@delay;
+  -moz-animation-delay:@delay;
+}
+.border-radius (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.transitionAll
+{
+  transition:all 0.4s;
+  -moz-transition:all 0.4s; /* Firefox 4 */
+  -webkit-transition:all 0.4s; /* Safari and Chrome */
+  -o-transition:all 0.4s; /* Opera */
+}
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.opacity (@opacity: 0.5) {
+  -webkit-opacity:  @opacity;
+  -moz-opacity:     @opacity;
+  opacity:    @opacity;
+}
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+  text-shadow: @string;
+}
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+  -webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  -moz-box-shadow:  @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  box-shadow:   @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+  -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  -moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.box-sizing (@type: border-box) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing:    @type;
+  box-sizing:         @type;
+}
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  -webkit-border-top-right-radius:    @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius:  @bottomleft;
+  -webkit-border-top-left-radius:     @topleft;
+
+  -moz-border-radius-topright:        @topright;
+  -moz-border-radius-bottomright:     @bottomright;
+  -moz-border-radius-bottomleft:      @bottomleft;
+  -moz-border-radius-topleft:         @topleft;
+
+  border-top-right-radius:            @topright;
+  border-bottom-right-radius:         @bottomright;
+  border-bottom-left-radius:          @bottomleft;
+  border-top-left-radius:             @topleft;
+
+  -moz-background-clip:    padding; 
+  -webkit-background-clip: padding-box; 
+  background-clip:         padding-box; 
+}
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+  -webkit-animation: @name @duration @delay @ease;
+  -moz-animation:    @name @duration @delay @ease;
+  -ms-animation:     @name @duration @delay @ease;
+}
+.transition (@transition) {
+  -webkit-transition: @transition;  
+  -moz-transition:    @transition;
+  -ms-transition:     @transition; 
+  -o-transition:      @transition;  
+}
+.transform(@string){
+  -webkit-transform: @string;
+  -moz-transform:    @string;
+  -ms-transform:     @string;
+  -o-transform:      @string;
+}
+.columns(@columnCount,@columnGap)
+{
+          column-count:@columnCount;
+     -moz-column-count:@columnCount; /* Firefox */
+  -webkit-column-count:@columnCount; /* Safari and Chrome */
+
+          column-gap:@columnGap;
+     -moz-column-gap:@columnGap; /* Firefox */
+  -webkit-column-gap:@columnGap; /* Safari and Chrome */
+
+}
+/* ------------------------------------------------- */ 
+/*      global fonts                                 */
+/* ------------------------------------------------- */
+body 
+{
+  background-color:#f8f8f8;
+}
+.iw-page-container
+{
+  
+}
+.div-table-outer-container
+{
+  display: table; 
+  //height: 120px; define height at element level
+  overflow: hidden;
+          
+  .div-table-inner-container
+  {
+    display: table-cell; 
+    vertical-align: middle;
+  }
+}
+/* ------------------------------------------------- */ 
+/*      Native DOM objects                           */
+/* ------------------------------------------------- */
+ul
+{
+  list-style:none;
+}
+/* ------------------------------------------------- */ 
+/*      shared styles                           */
+/* ------------------------------------------------- */
+header, nav, section, article, aside, footer 
+{
+  display:block;
+}
+
+// Small screens |Define mobile styles
+@media only screen 
+{
+  .top-header
+  {
+    background-color:#fff;
+    padding:0.4em 0em;
+    text-align:center;
+    //position:relative;
+    border-bottom:1px solid #eaeaea;
+    //height:40px;
+    
+    .user-facepile-wrapper
+    {
+      width:@user_profile_width;
+      height:@user_profile_height;
+      .border-radius(50%);
+      overflow:hidden;
+      background-color:#000;
+      margin:0 auto;
+      position:relative;
+      //border:1px solid rgba(255,255,255,0.4);
+      .box-shadow(0 1px 3px 0 rgba(0,0,0,0.4));
+      
+      .facepile-border
+      {
+        width:100%;
+        height:100%;
+        .border-radius(50%);
+        border:1px solid rgba(255,255,255,0.5);
+        position:absolute;
+        top:0;
+        left:50%;
+        margin-left:-(@user_profile_width/2);
+      }
+      
+      img {width:@user_profile_width;height:@user_profile_height;} 
+    }
+    
+    .cta-wrapper
+    {
+      height:80px;
+      //background-color:yellow;
+      text-align:right;
+      width:100%;
+      
+      .button
+      {
+        margin:0;
+      }
+      
+      p
+      {
+        color:#aaa;
+        font-size:0.75em;
+        margin:0;
+      }
+    }
+  }
+  .bottom-content
+  {
+    background-color:#fff;
+    text-align:center;
+    padding-bottom:4em;
+    //margin-top:100px;
+    //border-bottom:1px solid #fff;
+    
+    p
+    {
+      color:#888;
+    }
+  }
+
+  .main-content
+  {
+    text-align:center;
+    margin-top:100px;
+    border-bottom:1px solid #fff;
+   
+    .pad
+    {
+      padding: 1.5em 0 2em;
+    }
+    
+    p
+    {
+      color:#888;
+    }
+  }
+  .city-wrapper
+  {
+    .border-radius(6px);
+    overflow:hidden;
+    border:1px solid #888;
+    text-align:center;
+    background-color:#0e4057;
+    
+    .city-holder
+    {
+      height:148px;
+      width:100%;
+      
+      h3
+      {
+        color:#fff;
+        text-shadow: 3px 4px 1px rgba(0,0,0,0.5);
+        //font-weight:600;
+        margin:0;
+        line-height:1em;
+      }
+      h1.count
+      {
+        color:rgba(255,255,255,0.75);
+        text-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+        font-weight:600;
+        margin:0;
+        line-height:1em;
+      }
+    }
+    .city-holder.losangeles {background:transparent url('../images/poll/city/losangeles.jpg') 0 0 no-repeat;background-size:cover;}
+    .city-holder.sanfrancisco {background:transparent url('../images/poll/city/sanfrancisco.jpg') 0 0 no-repeat;background-size:cover;}
+    .city-holder.manhattan {background:transparent url('../images/poll/city/manhattan.jpg') 0 0 no-repeat;background-size:cover;}
+    .city-holder-large
+    {
+      height:240px;
+    }
+    .friendsholder
+    {
+      width:100%;
+      height:30px;
+      //background-color:#0e4057;
+    }
+    
+    h6.lock
+    {
+      padding:0 0.5em;
+    }
+    p.lock
+    {
+      color:#888;
+      font-size:0.825em;
+      margin-top:0.5em;
+    }
+  }
+  
+  .question-one
+  {
+    text-align:center;
+    
+    .choice-wrapper
+    {
+      position:relative;
+      
+      h2,h3
+      {
+        color:#fafafa;
+        margin:0;
+        line-height:1em;
+        margin-top:1em;
+      }
+      h6.subheader
+      {
+        position:absolute;
+        text-align:center;
+        bottom:0;
+        font-size:0.75em;
+        text-shadow:0 2px 4px rgba(0,0,0,0.4);
+        margin:0;
+        line-height:1em;
+        padding: 0 0 2px 2px;
+      }
+      .restcont
+      {
+        border:1px solid #888;
+        background-color:#333;
+        height:240px;
+      }
+      //check wrapper start
+      .check-wrapper
+      {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:transparent;
+        
+        img.check
+        {
+          width:40px;
+          height:40px;
+          position:absolute;
+          left:50%;
+          top:50%;
+          margin:-20px 0 0 -20px;
+          display:none;
+        }
+      }
+      .check-wrapper:hover
+      {
+        .transitionAll;
+        background-color:rgba(0,0,0,0.5);
+        -moz-box-shadow: inset 0 0 25px 25px rgba(0,0,0,0.5);
+        -webkit-box-shadow: inset 0 0 25px 25px rgba(0,0,0,0.5);
+        box-shadow: inset 0 0 25px 25px rgba(0,0,0,0.5);
+        cursor:pointer;
+        
+        img.check
+        {
+          display:block;
+        }
+      }
+      .check-wrapper.selected-choice
+      {
+        .transitionAll;
+        background-color:rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0 0 25px 25px rgba(0,0,0,0.5);
+        -webkit-box-shadow: inset 0 0 25px 25px rgba(0,0,0,0.5);
+        box-shadow: inset 0 0 25px 25px rgba(0,0,0,0.5);
+        cursor:pointer;
+        
+        img.check
+        {
+          display:block;
+        }
+      }
+      //check wrapper end
+    }
+  }
+  
+  #select-value
+  {
+    color:#f40;
+  }
+  img.desaturate
+  {
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
+    filter: url(resources.svg#desaturate); /* Gecko */
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+  }
+  
+} /* Define mobile styles */
+ 
+@media only screen and (max-width: 40em)
+{ } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens min 614 pix
+@media only screen and (min-width: 40.063em) 
+{ } /* min-width 641px, medium screens */
+
+// Medium screens min 641 pix
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) 
+{ } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+/* min-width 1025px, large screens 
+@media only screen and (min-width: 64.063em) 
+{ 
+  
+}
+ min-width 1025px, large screens */
+
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) 
+{ 
+ 
+} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em)
+{ 
+  
+}
+/* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 400px) 
+{
+  
+}
+@media only screen and (min-width: 528px) 
+{
+  
+}
+
+@media only screen and (min-width: 768px) 
+{
+  
+}
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 1280px)
+{
+
+}
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media only screen and (min-width: 1440px) {
+  
+}
+
+/* Apply styles to screens in landscape orientation */
+@media only screen and (orientation: landscape) {}
+
+/* Apply styles to screens in portrait orientation */
+@media only screen and (orientation: portrait) {}
+

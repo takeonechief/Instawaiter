@@ -1,0 +1,353 @@
+{
+	"id": 2243,
+	"name": "What Our Customers Are Saying",
+	"description": "Our members love receiving their NatureBox snacks every month!",
+	"type": "static",
+	"created_at": "2013-05-23T00:38:56Z",
+	"updated_at": "2013-05-30T20:57:43Z",
+	"brand": {
+		"id": 2974,
+		"name": "NatureBox"
+	},
+	"readypulse_user": {
+		"id": 755,
+		"name": "Molly Laufer"
+	},
+	"item_count": 12,
+	"content": [
+		{
+			"uniq_id": "238216479550947_238216479550947_535595986479660",
+			"content_source": "facebook",
+			"content_index": "facebook_042013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/535595986479660",
+			"user_text": "I received my fourth box yesterday. Not only were my choices yummy, you surprised me with a bonus snack for the second month in a row. Thank you :)",
+			"timestamp": "2013-04-14T23:06:14Z",
+			"social_attributes": {
+				"Likes": 1,
+				"Comments": 9
+			},
+			"readypulse_content_score": 51.78,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "1080691370",
+				"handle_name": "Kelly Moore O'Sullivan",
+				"name": "Kelly Moore O'Sullivan",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/1080691370.jpg",
+				"url": "http://www.facebook.com/profile.php?id=1080691370"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_4808890707468",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "photo",
+			"story_url": "http://www.facebook.com/photo.php?fbid=4808890707468&set=o.238216479550947&type=1",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/4808890707468",
+			"user_text": "Got my box today........OMG the snacks are FANTASTIC!!!",
+			"timestamp": "2013-05-15T22:29:31Z",
+			"social_attributes": {
+				"Likes": 7,
+				"Comments": 27
+			},
+			"readypulse_content_score": 75.53,
+			"sentiment": "positive",
+			"media": {
+				"images": [
+					{
+						"type": "email,",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/v1374189859/fb_238216479550947_238216479550947_4808890707468.jpg",
+						"width": 480,
+						"height": 480
+					}, {
+						"type": "tile",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/c_fill,h_250,w_300/fb_238216479550947_238216479550947_4808890707468.jpg",
+						"width": 300,
+						"height": 400
+					}, {
+						"type": "mobile-tile",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/c_fill,h_250,w_300/fb_238216479550947_238216479550947_4808890707468.jpg",
+						"width": 300,
+						"height": 400
+					}, {
+						"type": "large",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/c_limit,h_550,w_550/fb_238216479550947_238216479550947_4808890707468.jpg",
+						"width": 550,
+						"height": 480
+					}, {
+						"type": "original",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/v1374189859/fb_238216479550947_238216479550947_4808890707468.jpg",
+						"width": 480,
+						"height": 480
+					}
+				]
+			},
+			"actor": {
+				"social_id": "1452225591",
+				"handle_name": "Brenda Dulany Perry",
+				"name": "Brenda Dulany Perry",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/1452225591.jpg",
+				"url": "http://www.facebook.com/profile.php?id=1452225591"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_553644571341468",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/553644571341468",
+			"user_text": "I just got my first Nature Box!! the Lemon Meringue Waffles did not last long but maybe 10 mins after opening the box!! We are excited to try new things! \n",
+			"timestamp": "2013-05-29T23:25:31Z",
+			"social_attributes": {
+				"Likes": 1,
+				"Comments": 2
+			},
+			"readypulse_content_score": 19.33,
+			"sentiment": "neutral",
+			"actor": {
+				"social_id": "1316293758",
+				"handle_name": "Megan Chen",
+				"name": "Megan Chen",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/1316293758.jpg",
+				"url": "http://www.facebook.com/profile.php?id=1316293758"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_10151673324028223",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "photo",
+			"story_url": "http://www.facebook.com/photo.php?fbid=10151673324028223&set=o.238216479550947&type=1",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/10151673324028223",
+			"user_text": "Love all the snacks in my box!,",
+			"timestamp": "2013-05-15T22:23:30Z",
+			"social_attributes": {
+				"Likes": 5,
+				"Comments": 1
+			},
+			"readypulse_content_score": 54.92,
+			"sentiment": "positive",
+			"media": {
+				"images": [
+					{
+						"type": "email,",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/v1374189865/fb_238216479550947_238216479550947_10151673324028223.jpg",
+						"width": 360,
+						"height": 360
+					}, {
+						"type": "tile",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/c_fill,h_250,w_300/fb_238216479550947_238216479550947_10151673324028223.jpg",
+						"width": 576,
+						"height": 250
+					}, {
+						"type": "mobile-tile",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/c_fill,h_250,w_300/fb_238216479550947_238216479550947_10151673324028223.jpg",
+						"width": 576,
+						"height": 250
+					}, {
+						"type": "large",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/c_limit,h_550,w_550/fb_238216479550947_238216479550947_10151673324028223.jpg",
+						"width": 480,
+						"height": 550
+					}, {
+						"type": "original",
+						"url": "https://cloudinary-a.akamaihd.net/readypulse/image/upload/v1374189865/fb_238216479550947_238216479550947_10151673324028223.jpg",
+						"width": 360,
+						"height": 360
+					}
+				]
+			},
+			"actor": {
+				"social_id": "645468222",
+				"handle_name": "Stephanie Leung",
+				"name": "Stephanie Leung",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/645468222.jpg",
+				"url": "http://www.facebook.com/profile.php?id=645468222"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_553690461336879_83496709",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/553690461336879",
+			"user_text": "You guys rock! Keep up the good work! Excited to get my 2nd NatureBox next week!",
+			"timestamp": "2013-05-30T01:58:44Z",
+			"social_attributes": {},
+			"readypulse_content_score": 32.2,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "503206355",
+				"handle_name": "Brandy Meyers",
+				"name": "Brandy Meyers",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/503206355.jpg",
+				"url": "http://www.facebook.com/profile.php?id=503206355"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_553568298015762",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/553568298015762",
+			"user_text": "Received my 1st box today. It all looks so good, I don't know what one to try first!!! Thanks for offering such a great service!!",
+			"timestamp": "2013-05-29T22:01:47Z",
+			"social_attributes": {
+				"Likes": 2,
+				"Comments": 1
+			},
+			"readypulse_content_score": 40.44,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "1452017304",
+				"handle_name": "Cathy Kleineck Hendrikson",
+				"name": "Cathy Kleineck Hendrikson",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/1452017304.jpg",
+				"url": "http://www.facebook.com/profile.php?id=1452017304"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_539429212763004",
+			"content_source": "facebook",
+			"content_index": "facebook_042013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/539429212763004",
+			"user_text": "Got my first Nature box! I love it! Great snacks! ",
+			"timestamp": "2013-04-25T14:26:41Z",
+			"social_attributes": {
+				"Likes": 2,
+				"Comments": 5
+			},
+			"readypulse_content_score": 49.89,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "1050601789",
+				"handle_name": "Andrea Gabaldon",
+				"name": "Andrea Gabaldon",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/1050601789.jpg",
+				"url": "http://www.facebook.com/profile.php?id=1050601789"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_532255163480409",
+			"content_source": "facebook",
+			"content_index": "facebook_042013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/532255163480409",
+			"user_text": "Just got my second box in the mail! So excited! ",
+			"timestamp": "2013-04-05T14:24:06Z",
+			"social_attributes": {
+				"Likes": 1,
+				"Comments": 5
+			},
+			"readypulse_content_score": 48.43,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "501116587",
+				"handle_name": "Colette Alchenberger",
+				"name": "Colette Alchenberger",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/501116587.jpg",
+				"url": "http://www.facebook.com/profile.php?id=501116587"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_552737354765523",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/552737354765523",
+			"user_text": "Received my first NatureBox on Saturday. I ordered this for myself since my husband and kids usually won't even try what I love to snack on. Not anymore! We are all loving the NatureBox snacks and can't wait to see what we get next!",
+			"timestamp": "2013-05-28T02:21:35Z",
+			"social_attributes": {
+				"Likes": 1,
+				"Comments": 1
+			},
+			"readypulse_content_score": 39.4,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "1144520175",
+				"handle_name": "Lindsey Toomb",
+				"name": "Lindsey Toomb",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/1144520175.jpg",
+				"url": "http://www.facebook.com/profile.php?id=1144520175"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_545250935514165",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/545250935514165",
+			"user_text": "I received my 1st Naturebox today. Everyone in our home had something they loved the most. Everything was extremely good and of high quality.",
+			"timestamp": "2013-05-10T03:19:03Z",
+			"social_attributes": {
+				"Likes": 1,
+				"Comments": 4
+			},
+			"readypulse_content_score": 47.2,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "583356023",
+				"handle_name": "Sandy Turnbull Rogoff",
+				"name": "Sandy Turnbull Rogoff",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/583356023.jpg",
+				"url": "http://www.facebook.com/profile.php?id=583356023"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_544338945605364",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/544338945605364",
+			"user_text": "I just received my very first delivery and it is AMAZING!!",
+			"timestamp": "2013-05-07T17:07:21Z",
+			"social_attributes": {
+				"Likes": 2,
+				"Comments": 4
+			},
+			"readypulse_content_score": 47.82,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "505920296",
+				"handle_name": "Melissa Pasko",
+				"name": "Melissa Pasko",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/505920296.jpg",
+				"url": "http://www.facebook.com/profile.php?id=505920296"
+			}
+		}, {
+			"uniq_id": "238216479550947_238216479550947_547526345286624",
+			"content_source": "facebook",
+			"content_index": "facebook_052013",
+			"type": "text",
+			"story_url": "",
+			"external_conversation_link": "http://www.facebook.com/238216479550947/posts/547526345286624",
+			"user_text": "Received my first box today and my son loves the raspberry figgy bars.  Thanks for the wonderful snacks and I can't wait for my next shipment! ",
+			"timestamp": "2013-05-15T01:44:18Z",
+			"social_attributes": {
+				"Likes": 3,
+				"Comments": 3
+			},
+			"readypulse_content_score": 46.99,
+			"sentiment": "positive",
+			"actor": {
+				"social_id": "100003811201000",
+				"handle_name": "Christy Perry",
+				"name": "Christy Perry",
+				"bio": null,
+				"image_url": "http://cloudinary-a.akamaihd.net/readypulse/image/facebook/w_50,h_50/100003811201000.jpg",
+				"url": "http://www.facebook.com/profile.php?id=100003811201000"
+			}
+		}
+	]
+}

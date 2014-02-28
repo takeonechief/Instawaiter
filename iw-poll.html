@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./main-bin/css/foundation/normalize.css" type="text/css">
+		<link rel="stylesheet" href="./main-bin/css/foundation/foundation.css?v=1.01" type="text/css">
+
+		<script src="./main-bin/js/modernizr.js"></script>
+
+		<title>Poll</title>
+
+		<style type='text/css'>
+		</style>
+	</head>
+
+	<body>
+		<div class="iw-page-container" style="display:none;">
+			<section class="top-header fixed">
+				<div class="row">
+					<div class="small-4 columns small-offset-4">
+						<div class="user-facepile-wrapper"><img class="desaturate" src="./main-bin/images/poll/oksana.jpg"><div class="facepile-border"></div>
+						</div>
+						<div class="animated bounceIn" style="width:28px;height:14px;margin:0 auto;">
+							<img  src="./main-bin/images/poll/bowtie-2.png" width="28" height="14">
+						</div>
+					</div>
+					<div class="small-4 columns">
+						<div class="cta-wrapper div-table-outer-container">
+							<div class="div-table-inner-container">
+								<p>
+									Learn how you can...
+								</p>
+								<a class="button tiny radius round alert"> Eat For Free </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--
+			*********************************************************************************************************
+			// Start
+			*********************************************************************************************************
+			-->
+			<section class="main-content" style="">
+				<div class="pad">
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<h2>Thanks For Signing Up!</h2>
+							<h6 class="subheader">
+								Get rewarded for being a taste maker!
+								<br>
+								Complete a quick 30-Second poll and find out how you can
+							</h6>
+							<h4 style="color:#f40;">eat for free!</h4>
+							<a class="button medium radius round alert"> Get Started </a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-4 columns">
+							<div class="city-wrapper">
+								<div class="city-holder losangeles div-table-outer-container">
+									<div class="div-table-inner-container">
+										<h3>Los Angeles</h3>
+										<h1 class="count">45</h1>
+									</div>
+								</div>
+								<div id='lafriends' class='friendsholder'></div>
+								<img id='sflock' class='lock'  style="width:inherit;" src="./main-bin/images/poll/lock.png"/>
+								<img  class='check' style="width:inherit; margin:10px; display:none;" src="./main-bin/images/poll/circle-check-white.png"/>
+								<h6 id='launlock' class='lock subheader' style='display:none;'><span class='lacount'>0</span> friends will help you eat for free </h6>
+								<p style='display:none;' class='finalp'>
+									<span class='lacount'>0</span> friends in Los Angeles
+								</p>
+								<p class='lock'>
+									Complete poll to find out more.
+								</p>
+							</div>
+						</div>
+						<div class="small-12 medium-4 columns">
+							<div class="city-wrapper">
+								<div class="city-holder sanfrancisco div-table-outer-container">
+									<div class="div-table-inner-container">
+										<h3>San Francisco</h3>
+										<h1 class="count">45</h1>
+									</div>
+								</div>
+								<div id='sffriends' class='friendsholder'></div>
+								<img id='sflock' class='lock'  style="width:inherit;" src="./main-bin/images/poll/lock.png"/>
+								<img  class='check' style="width:inherit; margin:10px; display:none;" src="./main-bin/images/poll/circle-check-white.png"/>
+								<h6 id='sfunlock' class='lock subheader' style='display:none;'><span class='sfcount'>0</span> friends will help you eat for free </h6>
+								<p style='display:none;' class='finalp'>
+									<span class='sfcount'>0</span> friends in San Francisco
+								</p>
+								<p class='lock'>
+									Complete poll to find out more.
+								</p>
+							</div>
+						</div>
+						<div class="small-12 medium-4 columns">
+							<div class="city-wrapper">
+								<div class="city-holder manhattan div-table-outer-container">
+									<div class="div-table-inner-container">
+										<h3>Manhattan</h3>
+										<h1 class="count">45</h1>
+									</div>
+								</div>
+								<div id='nyfriends' class='friendsholder'></div>
+								<img id='sflock' class='lock'  style="width:inherit;" src="./main-bin/images/poll/lock.png"/>
+								<img  class='check' style="width:inherit; margin:10px; display:none;" src="./main-bin/images/poll/circle-check-white.png"/>
+								<h6 id='nyunlock' class='lock subheader' style='display:none;'><span class='nycount'>0</span> friends will help you eat for free </h6>
+								<p style='display:none;' class='finalp'>
+									<span class='nycount'>0</span> friends in New York
+								</p>
+								<p class='lock'>
+									Complete poll to find out more.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- add a white bg and visual separator -->
+			<section class="bottom-content" style="display:none;">
+				<div class="row">
+					<div class="small-8 small-centered columns">
+						<br>
+						<h3>Complete Our Poll And Unlock The Secret</h3>
+						<p>
+							We all love food. And all tell our friends about our most awesome food experience. We believe you should be rewarded for spreading the word for your fav restaurants. So help us create a service that you will love and we will show you how you can ...
+						</p>
+						<a class="button medium radius round alert"> I Want To Eat For Free </a>
+					</div>
+				</div>
+			</section>
+
+			<!--
+			*********************************************************************************************************
+			// Select Desire
+			*********************************************************************************************************
+			-->
+			<section class="main-content" style="">
+				<div class="pad">
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<h3>What is the ultimate culinary experience you desire?</h3>
+							<h6 class="subheader">
+								select one or more
+							</h6>
+						</div>
+					</div>
+					<div class="question-one">
+						<div class="row">
+							<ul class="small-block-grid-3">
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper">
+										<img class="th" src="./main-bin/images/poll/choices/food-1.jpg">
+										<div class="check-wrapper">
+											<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+										</div>
+									</div>
+									<h6>Exclusive and Limited</h6>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper">
+										<img class="th" src="./main-bin/images/poll/choices/food-2.jpg">
+										<div class="check-wrapper">
+											<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+										</div>
+									</div>
+									<h6>New and Inventive</h6>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper">
+										<img class="th" src="./main-bin/images/poll/choices/food-3.jpg">
+										<div class="check-wrapper">
+											<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+										</div>
+									</div>
+									<h6>Adventurous and Daring</h6>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper">
+										<img class="th" src="./main-bin/images/poll/choices/food-4.jpg">
+										<div class="check-wrapper">
+											<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+										</div>
+									</div>
+									<h6>Top Secret</h6>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper">
+										<img class="th" src="./main-bin/images/poll/choices/food-5.jpg">
+										<div class="check-wrapper">
+											<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+										</div>
+									</div>
+									<h6>Traditional</h6>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper">
+										<img class="th" src="./main-bin/images/poll/choices/food-6.jpg">
+										<div class="check-wrapper">
+											<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+										</div>
+									</div>
+									<h6>Fashionable</h6>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<br>
+							<a class="button medium radius round alert"> Next </a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--
+			*********************************************************************************************************
+			// Select Restaurant
+			*********************************************************************************************************
+			-->
+			<section class="main-content" style="">
+				<div class="pad">
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<h3>Where do you love to eat?</h3>
+							<h6 class="subheader">
+								select a neighborhood
+							</h6>
+							<div class="row">
+								<div class="small-6 small-centered columns">
+									<select id="select-value">
+										<option value="NoPa">NoPa</option>
+										<option value="SoMa">SoMa</option>
+										<option value="Noe Valley">Noe Valley</option>
+										<option selected="selected" value="Financial District" >Financial District</option>
+									</select>
+								</div>
+							</div>
+							<p>
+								select one or more restaurants below
+							</p>
+						</div>
+					</div>
+					<div class="question-one">
+						<div class="row">
+							<ul class="small-block-grid-5">
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper restcont">
+										<div class="restcont">
+											<h3 style="">Kokkari Estiatorio</h3>
+											<div class="check-wrapper">
+												<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+											</div>
+											<h6 class="subheader">Financial District</h6>
+										</div>
+									</div>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper restcont">
+										<div class="restcont">
+											<h3 style="">La Fusion</h3>
+											<div class="check-wrapper">
+												<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+											</div>
+											<h6 class="subheader">Financial District</h6>
+										</div>
+									</div>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper restcont">
+										<div class="restcont">
+											<h3 style="">Cafe Macaroni</h3>
+											<div class="check-wrapper">
+												<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+											</div>
+											<h6 class="subheader">Financial District</h6>
+										</div>
+									</div>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper restcont">
+										<div class="restcont">
+											<h3 style="">Benu</h3>
+											<div class="check-wrapper">
+												<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+											</div>
+											<h6 class="subheader">Financial District | Soma</h6>
+										</div>
+									</div>
+								</li>
+								<li>
+									<!-- Your content goes here -->
+									<div class="choice-wrapper restcont">
+										<div class="restcont">
+											<h3 style="">Tomasson's Ristorante Italiano</h3>
+											<div class="check-wrapper">
+												<img class="check" src="./main-bin/images/poll/circle-check-white.png">
+											</div>
+											<h6 class="subheader">Financial District</h6>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<br>
+							<a class="button medium radius round alert"> Next </a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!--
+			*********************************************************************************************************
+			// Select Price
+			*********************************************************************************************************
+			-->
+			<section class="main-content" style="">
+				<div class="pad">
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<h3>How much are you willing to pay? </h3>
+							<h6 class="subheader">
+								select a price point
+							</h6>
+							<div class="row">
+								<div class="small-3 small-centered columns">
+									<select id="select-value">
+										<option value="20">$20 - $40</option>
+										<option value="60">$60</option>
+										<option value="80">$80</option>
+										<option selected="selected" value="100" >$100</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<br>
+							<a class="button medium radius round alert"> Finish </a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!--
+			*********************************************************************************************************
+			// Finish
+			*********************************************************************************************************
+			-->
+			<section class="main-content">
+				<div class="pad">
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<h2>Here's How You Can Eat For Free</h2>
+							<h6 class="subheader">
+								Get rewarded for being a taste maker!
+								<br>
+								Complete a quick 30-Second poll and find out how you can
+							</h6>
+							<br>
+							<h4 style="color:#f40;">Have Your Friends Envy You</h4>
+							<h6 class="subheader">Recruit your followers.</h6>
+							<a class="button medium radius round alert"> Send Facebook Message </a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-7 medium-centered columns">
+							<div class="city-wrapper">
+								<div class="city-holder city-holder-large sanfrancisco div-table-outer-container">
+									<div class="div-table-inner-container">
+										<h3>San Francisco</h3>
+										<h1 class="count">45</h1>
+									</div>
+								</div>
+								<div id='sffriends' class='friendsholder'></div>
+								<img id='sflock' class='lock'  style="width:inherit;display:none" src="./main-bin/images/poll/lock.png"/>
+								<img  class='check' style="width:inherit; margin:10px; display:none;" src="./main-bin/images/poll/circle-check-white.png"/>
+								<h6 id='sfunlock' class='lock subheader' style=''><span class='sfcount'>45</span> friends will help you eat for free </h6>
+								<p style='display:none;' class='finalp'>
+									<span class='sfcount'>0</span> friends in San Francisco
+								</p>
+								<p class='lock'>
+									Complete poll to find out more.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bottom-content">
+				<div class="row">
+					<div class="small-8 small-centered columns">
+						<br>
+						<h3>Complete Our Poll And Unlock The Secret</h3>
+						<p>
+							We all love food. And all tell our friends about our most awesome food experience. We believe you should be rewarded for spreading the word for your fav restaurants. So help us create a service that you will love and we will show you how you can ...
+						</p>
+						<a class="button medium radius round alert"> Post on Facebook </a>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+
+		<link rel="stylesheet/less" href="./main-bin/less/styles-poll.less?v=1.1"/>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="./main-bin/js/vendor/fastclick.js"></script>
+		<script src="./main-bin/js/foundation/foundation.min.js"></script>
+		<script src="./main-bin/js/vendor/less-1.6.2.js"></script>
+
+		<script src="./main-bin/js/vendor/jquery.cookie.js"></script>
+		<script src="./main-bin/js/vendor/modernizr.js"></script>
+		<script src="http://naturebox.com/offer/js/purl.js"></script>
+
+		<link rel="stylesheet" href="./main-bin/css/vendor/animate.css" type="text/css">
+
+		<script src="./main-bin/js/poll.js?v=1.0"></script>
+
+	</body>
+
+</html>
